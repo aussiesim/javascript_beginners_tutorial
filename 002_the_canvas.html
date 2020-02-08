@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>The Canvas (JavaScript)</title>
+    <!-- Just a little CSS to make things look a little nicer -->
+    <link rel="stylesheet" href="./tute-styles.css" />
+    <script>
+        // When the page finishes loading it does whatever is specified in the body's onload function.
+        // In this case, the following function.
+        function pageLoaded(){
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var ctx = canvas.getContext('2d');
+            ctx.fillText("Hello World!", 10, 10);
+        }
+    </script>
+</head>
+<!-- 
+    This time, we are going to run a function called 'pageLoaded' from the onload event.
+-->
+<body onload="pageLoaded()">
+    <h1>The Canvas</h1>
+    <canvas>
+    </canvas>
+    <div>
+        That box up there? That's a HTML canvas element. We're going to learn how to draw and animate
+        stuff in there.<br/>
+        Along the way, we're going to learn about variables, flow control, how to accept user input and
+        some other cool things. You might even pick up some basics of HTML and CSS along the way.<br/>
+        <strong>PLEASE NOTE!! </strong> 
+    </div>
+</body>
