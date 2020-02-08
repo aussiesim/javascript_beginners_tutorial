@@ -1,0 +1,1 @@
+Add a script that turns all list items in the "Searches" div into links to Google searches with the appropriate url encoding.
