@@ -5,4 +5,64 @@ canvas {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10pt;
+    background-color: #55415f;
+    color: #e6c86e;
 }
+
+h1 {
+    color: #64b964;
+}
+
+a {
+    color: #508cd7;
+}
+
+strong {
+    color: #64b964;
+}
+
+#info {
+    border: 1px solid #d77355;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.next {
+    float: right;
+}
+.previous {
+    float: left;
+}
+.next, .previous {
+    display: block;
+    background: #dcf5ff;
+    border: 1px solid #646964;
+    padding: 7px 7px 7px 7px;
+    margin-bottom: 10px;
+    color: #d77355;
+    font-weight: bold;
+}
+
+#searches {
+    margin-top: 20px;
+}
+
+#searches a {
+    display: block;
+    padding: 5px 5px 5px 5px;
+}
+
+/*
+    https://lospec.com/palette-list/dawnbringers-8-color
+
+    #000000
+    #55415f
+    #646964
+    #d77355
+    #508cd7
+    #64b964
+    #e6c86e
+    #dcf5ff
+*/

@@ -1,45 +1,52 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Hello World! (JavaScript)</title>
+    <title>Hello, World! (An introduction to JavaScript)</title>
     <!-- Just a little CSS to make things look a little nicer -->
     <link rel="stylesheet" href="./tute-styles.css" />
+
+    <!-- A script so I can be a little lazy when listing the related searches and anything else that seems to be consistently useful... -->
+    <script type='text/javascript' src='./utils.js'></script>
 </head>
 <!--
-    When the page is finished loading it will automatically run whatever 
+    When the page is finished loading it will automatically run whatever
     is in the 'onload' event for the body. So in this case it executes the
     JavaScript command to create a popup alert that simply says 'Hello World!'
     with an OK button.
 -->
-<body onload="alert('Hello World!')">
-    <h1>Hello World!</h1>
-    <div>
+<body onload="alert('Hello, World!!');">
+    <div id="info">
+        <h1>Hello, World!</h1>
         <p>
-            This is going to be a series of very basic web pages that combine together to create a complete
+            This is going to be a series of very basic web pages that combine together to create an introductory
             beginner's JavaScript tutorial. What makes this tutorial different? It's intended to be a little
             more fun and faster paced than the majority of tutorials out there. I'm going to assume that you
             have a pretty good head on your shoulders and that you are keen to get things happening at a rapid
             rate so I am going to intentionally gloss over some things, but don't worry! One of the most valuable
-            tools in every software developers kit is the ability to use Google to search for relevant keywords so
+            tools in every software developers kit is the ability to use Google to search for relevant keywords, so
             at the bottom of each page I will include some relevant search suggestions if you are keen to go a little
             more in depth.
         </p>
         <p>
-            Because of the nature of webpages and JavaScript, what you see in your browser is only part of the 
+            Because of the nature of webpages and JavaScript, what you see in your browser is only part of the
             tutorial - a bit like a car, it's what's under the hood that really powers the page so be sure to check out
-            the source code... Just right-click on the page and select "View Source".
+            the source code... Just right-click on the page and select "View Source" or, even better, "Inspect".
         </p>
         <p>
-            We are going to be using the HTML canvas a lot because being able to see things move tends to make things 
+            We are going to be using the HTML canvas a lot because being able to see things move tends to make things
             more interesting.
         </p>
-        <a href="002_the_canvas.html">Huh? HTML Canvas?</a>
+        <a class="next" href="002_the_canvas.html">Huh? HTML Canvas? &raquo;</a>
     </div>
-    <div id="searches" class="searches">
+    <div id="searches">
         Related searches
         <ul>
-            <li>Hello World</li>
-            <li>Beginners Javascript Tutorial</li>
+            <li>JavaScript alert</li>
+            <li>JavaScript onload event</li>
+            <li>"Hello, World" program</li>
+            <li>Beginners JavaScript tutorial</li>
             <li>How to Google</li>
         </ul>
     </div>
 </body>
+</html>

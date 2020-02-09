@@ -11,6 +11,7 @@
     <script>
         // When the page finishes loading it does whatever is specified in the body's onload function.
         // In this case, the following function.
+
         function pageLoaded() {
             var canvas = document.getElementsByTagName("canvas")[0];
             var ctx = canvas.getContext('2d');
@@ -20,8 +21,30 @@
 
             ctx.fillStyle = "#000000";
             ctx.font = "30px Verdana";
-            ctx.fillText("Hello, World!", 100, 110);
 
+            setInterval(draw, 50);
+        }
+        
+        var x = 100;
+        var y = 110;
+        var xd = 1;
+        var yd = 1;
+        function draw() {
+
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var ctx = canvas.getContext('2d');
+            
+            ctx.fillStyle = "#ffffffff";
+            ctx.fillRect(0, 0, 400, 200);
+
+            ctx.fillStyle = "#000000";
+            ctx.fillText("Hello, World!", x, y);
+            x = x + xd;
+            y = y + yd;
+            if (x > 200) xd = -1;
+            if (y > 200) yd = -1;
+            if (x < 0) xd = 1;
+            if (y < 30) yd = 1;
         }
     </script>
 </head>
@@ -30,7 +53,7 @@
 -->
 <body onload="pageLoaded()">
     <div id="info">
-        <h1>The Canvas</h1>
+        <h1>Do Something!!</h1>
         <canvas width="400" height="200">
         </canvas>
         <p>That box up there? That's a HTML canvas element. We're going to learn how to draw and animate
@@ -38,7 +61,7 @@
         <p><strong>For Parents: </strong>Along the way, we're going to learn about variables, flow control, how to accept user input and
         some other cool things. We'll also pick up some basics of HTML and CSS, the basics of building webpages.</p>
         <p><strong>For Kids: </strong>We're going to make a game. =)</p>
-        <a class="previous" href="./001_hello_world.html">&laquo; Hello, World!</a><a class="next" href="./003_do_something.html">Enough! Do something, already!! &raquo;</a>
+        <a class="previous" href="./002_the_canvas.html">&laquo; The Canvas</a><a class="next" href="#">Ummm.... &raquo;</a>
     </div>
 </body>
 </html>
